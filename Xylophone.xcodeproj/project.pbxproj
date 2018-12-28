@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56D9276321D5716300D4971F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9276221D5716300D4971F /* SoundManager.swift */; };
 		63C019C91C58DF76001F4187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019C81C58DF76001F4187 /* AppDelegate.swift */; };
-		63C019CB1C58DF76001F4187 /*  VIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019CA1C58DF76001F4187 /*  VIewController.swift */; };
+		63C019CB1C58DF76001F4187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C019CA1C58DF76001F4187 /* ViewController.swift */; };
 		63C019CE1C58DF76001F4187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C019CC1C58DF76001F4187 /* Main.storyboard */; };
 		63C019D01C58DF76001F4187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C019CF1C58DF76001F4187 /* Assets.xcassets */; };
 		63C019D31C58DF76001F4187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C019D11C58DF76001F4187 /* LaunchScreen.storyboard */; };
@@ -23,9 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56D9276221D5716300D4971F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		63C019C51C58DF76001F4187 /* Xylophone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xylophone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C019C81C58DF76001F4187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63C019CA1C58DF76001F4187 /*  VIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " VIewController.swift"; sourceTree = "<group>"; };
+		63C019CA1C58DF76001F4187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63C019CD1C58DF76001F4187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63C019CF1C58DF76001F4187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C019D21C58DF76001F4187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,8 +87,9 @@
 		63C019C71C58DF76001F4187 /* Xylophone */ = {
 			isa = PBXGroup;
 			children = (
+				56D9276221D5716300D4971F /* SoundManager.swift */,
 				63C019C81C58DF76001F4187 /* AppDelegate.swift */,
-				63C019CA1C58DF76001F4187 /*  VIewController.swift */,
+				63C019CA1C58DF76001F4187 /* ViewController.swift */,
 				63C019CC1C58DF76001F4187 /* Main.storyboard */,
 				63C019CF1C58DF76001F4187 /* Assets.xcassets */,
 				63C019D11C58DF76001F4187 /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 				TargetAttributes = {
 					63C019C41C58DF76001F4187 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = DP2B4NSR74;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -176,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C019CB1C58DF76001F4187 /*  VIewController.swift in Sources */,
+				63C019CB1C58DF76001F4187 /* ViewController.swift in Sources */,
 				63C019C91C58DF76001F4187 /* AppDelegate.swift in Sources */,
+				56D9276321D5716300D4971F /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +313,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DP2B4NSR74;
 				INFOPLIST_FILE = Xylophone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YourName.Xylophone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poormanscastle.games.Xylophone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,13 +329,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DP2B4NSR74;
 				INFOPLIST_FILE = Xylophone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YourName.Xylophone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poormanscastle.games.Xylophone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

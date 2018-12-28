@@ -10,20 +10,14 @@ import UIKit
 
 class ViewController: UIViewController{
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
-
+    
     @IBAction func notePressed(_ sender: UIButton) {
-        
-        
-        
+        print("User clicked key \(sender.tag).");
+        SoundManager.playSound("note\(sender.tag)");
     }
     
-  
-
 }
 
