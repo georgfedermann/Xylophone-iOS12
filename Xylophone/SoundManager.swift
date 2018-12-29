@@ -16,10 +16,10 @@ class SoundManager {
     static func playSound(_ note:String){
         let bundlePath = Bundle.main.path(forResource:note, ofType:"wav");
         guard bundlePath != nil else {
-            print("Couldn't resolve audio file for \(note).");
+//            print("Couldn't resolve audio file for \(note).");
             return;
         }
-        print("found audio file at \(bundlePath!).");
+//        print("found audio file at \(bundlePath!).");
         let soundUrl = URL(fileURLWithPath: bundlePath!);
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundUrl);
